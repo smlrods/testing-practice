@@ -1,11 +1,11 @@
-import * as calculator from 
+import * as calculator from './calculator'
 
 test('add', () => {
   expect(calculator.add(1,1)).toBe(2);
   expect(calculator.add(-1,1)).toBe(0);
-  expect(calculator.add(2,1)).toBe(2);
-  expect(calculator.add(2,4)).toBe(8);
-  expect(calculator.add(10,8)).toBe(80);
+  expect(calculator.add(2,1)).toBe(3);
+  expect(calculator.add(2,4)).toBe(6);
+  expect(calculator.add(10,8)).toBe(18);
 });
 
 test('subtract', () => {
@@ -28,6 +28,6 @@ test('multiply', () => {
   expect(calculator.multiply(1,1)).toBe(1);
   expect(calculator.multiply(-1,1)).toBe(-1);
   expect(calculator.multiply(2,1)).toBe(2);
-  expect(calculator.multiply(2,4)).toBe(0.5);
-  expect(calculator.multiply(10,8)).toBe(1.25);
+  expect(calculator.multiply(2,4)).toBe(8);
+  expect(calculator.multiply(10,8)).toBe(80);
 });
