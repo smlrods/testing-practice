@@ -1,12 +1,12 @@
-import { caesarCipher } from 'caesarCipher';
+import caesarCipher from './caesarCipher.js';
 
 test('Caesar Cipher (only letters)', () => {
-  const plaintext = 'abcdefgz';
-  expect(caesarCipher(plaintext)).toBe('bcdefgha');
+  const plaintext = 'abCde fgz';
+  expect(caesarCipher(plaintext)).toBe('bcDef gha');
 });
 
 
 test('Caesar Cipher (letters with punctuation)', () => {
   const plaintext = 'a.-bc_de$fgz';
-  expect(caesarCipher(plaintext)).toBe('bcdefgha');
+  expect(caesarCipher(plaintext)).toBe('b.-cd_ef$gha');
 });
