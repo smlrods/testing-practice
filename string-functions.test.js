@@ -1,4 +1,4 @@
-import { capitalize } from './string-functions.js';
+import { capitalize, reverseString } from './string-functions.js';
 
 const strings = ['sometext', 'javascript', 'github', 'JeSt', 'eSlint']
 const stringsReverse = ['txetemos', 'tpircsavaj', 'buhtig', 'tSeJ', 'tnilSe'];
